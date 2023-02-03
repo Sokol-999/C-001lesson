@@ -92,10 +92,10 @@ void PrintArray(int[] array)
 
 void SelectionSort(int[] array)
 {
-    for (int i = 0; i < array.LongLength; i++)
+    for (int i = 0; i < array.LongLength- 1; i++)
     {
-        int minPosition = 1;
-        for (int j = i + 1; j < array.Length - 1; j++)
+        int minPosition = i;
+        for (int j = i + 1; j < array.Length ; j++)
         {
             if (array[j] < array[minPosition]) minPosition = j;
         }
